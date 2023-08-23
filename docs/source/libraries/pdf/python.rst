@@ -6,7 +6,7 @@ Python API
 PDF
 ********
 
-.. automodule:: RPA.PDF
+.. autoclass:: RPA.PDF.PDF
    :members:
    :inherited-members:
    :undoc-members:

@@ -6,7 +6,7 @@ Python API
 Excel.Application
 *****************
 
-.. automodule:: RPA.Excel.Application
+.. autoclass:: RPA.Excel.Application.Application
    :members:
    :inherited-members:
    :undoc-members:

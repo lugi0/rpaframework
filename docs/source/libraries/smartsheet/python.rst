@@ -6,7 +6,7 @@ Python API
 Smartsheet
 **********
 
-.. automodule:: RPA.Smartsheet
+.. autoclass:: RPA.Smartsheet.Smartsheet
    :members:
    :inherited-members:
    :undoc-members:

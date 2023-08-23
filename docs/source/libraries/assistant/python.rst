@@ -6,7 +6,7 @@ Python API
 Assistant
 *********
 
-.. automodule:: RPA.Assistant
+.. autoclass:: RPA.Assistant.Assistant
    :members:
    :inherited-members:
    :undoc-members:

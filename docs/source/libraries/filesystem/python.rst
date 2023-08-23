@@ -6,7 +6,7 @@ Python API
 FileSystem
 **********
 
-.. automodule:: RPA.FileSystem
+.. autoclass:: RPA.FileSystem.FileSystem
    :members:
    :inherited-members:
    :undoc-members:

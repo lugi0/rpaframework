@@ -6,7 +6,7 @@ Python API
 Outlook.Application
 *******************
 
-.. automodule:: RPA.Outlook.Application
+.. autoclass:: RPA.Outlook.Application.Application
    :members:
    :inherited-members:
    :undoc-members:

@@ -6,7 +6,7 @@ Python API
 Excel.Application
 *****************
 
-.. automodule:: RPA.Word.Application
+.. autoclass:: RPA.Word.Application.Application
    :members:
    :inherited-members:
    :undoc-members:

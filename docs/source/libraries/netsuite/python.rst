@@ -6,7 +6,7 @@ Python API
 Netsuite
 ********
 
-.. automodule:: RPA.Netsuite
+.. autoclass:: RPA.Netsuite.Netsuite
    :members:
    :inherited-members:
    :undoc-members:

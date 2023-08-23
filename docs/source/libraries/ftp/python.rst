@@ -6,7 +6,7 @@ Python API
 FTP
 ***
 
-.. automodule:: RPA.FTP
+.. autoclass:: RPA.FTP.FTP
    :members:
    :inherited-members:
    :undoc-members:

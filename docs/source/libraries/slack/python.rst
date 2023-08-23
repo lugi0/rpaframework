@@ -6,7 +6,7 @@ Python API
 Slack
 *****
 
-.. automodule:: RPA.Slack
+.. autoclass:: RPA.Slack.Slack
    :members:
    :inherited-members:
    :undoc-members:

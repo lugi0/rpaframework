@@ -6,7 +6,7 @@ Python API
 HTTP
 ****
 
-.. automodule:: RPA.HTTP
+.. autoclass:: RPA.HTTP.HTTP
    :members:
    :inherited-members:
    :undoc-members:

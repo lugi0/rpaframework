@@ -6,7 +6,7 @@ Python API
 Dialogs
 *******
 
-.. automodule:: RPA.Dialogs
+.. autoclass:: RPA.Dialogs.Dialogs
    :members:
    :inherited-members:
    :undoc-members:

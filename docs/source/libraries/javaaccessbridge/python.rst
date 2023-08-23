@@ -6,7 +6,7 @@ Python API
 JavaAccessBridge
 ****************
 
-.. automodule:: RPA.JavaAccessBridge
+.. autoclass:: RPA.JavaAccessBridge.JavaAccessBridge
    :members:
    :inherited-members:
    :undoc-members:

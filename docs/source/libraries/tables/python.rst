@@ -6,7 +6,7 @@ Python API
 Tables
 ******
 
-.. automodule:: RPA.Tables
+.. autoclass:: RPA.Tables.Tables
    :members:
    :inherited-members:
    :undoc-members:

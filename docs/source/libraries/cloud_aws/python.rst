@@ -6,7 +6,7 @@ Python API
 AWS
 ***
 
-.. automodule:: RPA.Cloud.AWS
+.. autoclass:: RPA.Cloud.AWS.AWS
    :members:
    :inherited-members:
    :undoc-members:
