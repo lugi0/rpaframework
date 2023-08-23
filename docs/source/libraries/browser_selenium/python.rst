@@ -10,4 +10,3 @@ Browser.Selenium
    :members:
    :inherited-members:
    :undoc-members:
-   :show-inheritance:

@@ -10,4 +10,3 @@ Notifier
    :members:
    :inherited-members:
    :undoc-members:
-   :show-inheritance:

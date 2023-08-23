@@ -9,4 +9,3 @@ Azure
 .. autoclass:: RPA.Cloud.Azure.Azure
    :members:
    :undoc-members:
-   :show-inheritance:

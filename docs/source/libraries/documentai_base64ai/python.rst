@@ -10,4 +10,3 @@ Base64AI
    :members:
    :inherited-members:
    :undoc-members:
-   :show-inheritance:

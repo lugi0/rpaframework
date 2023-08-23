@@ -10,4 +10,3 @@ Calendar
    :members:
    :inherited-members:
    :undoc-members:
-   :show-inheritance:
