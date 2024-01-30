@@ -68,7 +68,7 @@ RPA.Email.Exchange:
    :header: "Line", "Message"
    :widths: 10, 40
 
-   "522", "The exchangelib does not seem to provide any straightforward way of"
+   "526", "The exchangelib does not seem to provide any straightforward way of"
 
 RPA.Email.ImapSmtp:
 ===================
@@ -77,7 +77,7 @@ RPA.Email.ImapSmtp:
    :header: "Line", "Message"
    :widths: 10, 40
 
-   "956", "mypy should handle enum exhaustivity validation"
+   "958", "mypy should handle enum exhaustivity validation"
 
 RPA.Excel.Files:
 ================
@@ -118,8 +118,8 @@ RPA.JavaAccessBridge:
    :header: "Line", "Message"
    :widths: 10, 40
 
-   "420", "add keyword for taking screenshots of elements and window"
-   "421", "implement proper XPath syntax support"
+   "436", "add keyword for taking screenshots of elements and window"
+   "437", "implement proper XPath syntax support"
 
 RPA.MSGraph:
 ============
@@ -128,8 +128,8 @@ RPA.MSGraph:
    :header: "Line", "Message"
    :widths: 10, 40
 
-   "124", "Implement a `TokenBackend` that uses Robocorp vault,"
-   "299", "Does this fail when we define a path we want?"
+   "122", "Implement a `TokenBackend` that uses Robocorp vault,"
+   "297", "Does this fail when we define a path we want?"
 
 RPA.Robocorp.Process:
 =====================

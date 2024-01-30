@@ -12,9 +12,165 @@ Latest versions
 `Upcoming release <https://github.com/robocorp/rpaframework/projects/3#column-16713994>`_
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
 `Released <https://pypi.org/project/rpaframework/#history>`_
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+17 Jan 2024
+-----------
+
+- Library **RPA.Cloud.Google** (:pr:`1145`, ``rpaframework-google`` **8.2.0**):
+
+  - All ``init_`` keywords will return initialized ``service`` instance.
+  - Library level documentation refactoring. Authentication related examples are now
+    in their own markdown file.
+
+28.1.0 - 12 Jan 2024
+--------------------
+
+- Library **RPA.Outlook.Application** (:pr:`1144`): Add ``reply_to`` and ``check_names``
+  parameters for ``Send Email``.
+
+28.0.0 - 18 Dec 2023
+--------------------
+
+- Library **RPA.Browser.Selenium** (:pr:`1139`): Keyword ``Open Available Browser`` won't
+  anymore try to initialize webdrivers for browsers that are not installed in the system.
+- Library **RPA.Crypto** (:pr:`1140`): Fix `AES256` return types for keywords
+  ``Generate Key`` and ``Decrypt String`` (from bytes to string).
+- Library **RPA.Hubspot** (:issue:`1106`): Extract the ``RPA.Hubspot`` library out of the
+  main package and into its own package ``rpaframework-hubspot``. This is a breaking
+  change, please update your ``conda.yaml`` accordingly.
+
+27.7.0 - 21 Nov 2023
+--------------------
+
+- Update ``selenium`` package to the version **4.15.2**.
+- Library **RPA.Crypto** (:pr:`1128`): Add `AES256` encryption method support.
+- Library **RPA.Windows** (:pr:`1134`; ``rpaframework-windows`` **7.5.0**): Add keywords
+  ``Enable Process Listing`` and ``Disable Process Listing`` to enable/disable the listing
+  of processes in the ``List Windows`` keyword.
+
+27.6.0 - 15 Nov 2023
+--------------------
+
+- Library **RPA.Robocorp.Vault** (:pr:`1129`): Improve error message when trying to
+  connect to Control Room Vault without valid connection details.
+- Library **RPA.SAP** (:pr:`1130`): Add keywords for pressing F1 or F4 on textfield
+  and gridview elements. Thanks to `Enrico Franzelli <https://github.com/wisenrico>`_
+  for the contribution!
+- Relax `importlib-metadata` version requirement to allow `4.13.0` and above.
+
+27.5.3 - 10 Nov 2023
+--------------------
+
+- Library **RPA.Outlook.Application** (:pr:`1127`): Fix how keyword ``Move Emails`` works.
+  Read more from the pull request.
+
+27.5.2 - 06 Nov 2023
+--------------------
+
+- Library **RPA.Robocorp.Storage** (``robocorp-storage`` **1.0.2**): Fix keyword
+  ``List Assets`` for listing and returning correctly all the assets available in the
+  cloud.
+- Library **RPA.Assistant** (:pr:`1122`; ``rpaframework-assistant`` **3.0.2**): Show
+  files selected with ``Add File Input`` to make it easier for users to know it has
+  been used. Also shows a warning if the image path for ``Add Image`` is not valid or
+  if the file does not exist.
+
+.. note::
+  This version is compatible with ``robocorp`` **1.2.1**.
+
+27.5.1 - 01 Nov 2023
+--------------------
+
+- Library **RPA.Browser.Selenium** (:pr:`1123`; ``rpaframework-core`` **11.2.3**): Fix
+  "There is no such driver by url" error with Chrome/Chromium versions above **114**
+  attempting a `chromedriver` version resolution.
+- Library **RPA.Robocorp.WorkItems**: Fix dirty items logging and documentation nits.
+
+27.5.0 - 24 Oct 2023
+--------------------
+
+- Add `reply_to` parameter for ``Send Message`` keyword for **RPA.Email.Exchange**
+  and **RPA.Email.ImapSmtp** libraries.
+
+27.4.2 - 13 Oct 2023
+--------------------
+
+- `Application` classes from **RPA.*.Application** libraries can be further inherited
+  and extended without the need of adding a mandatory class-level docstring.
+- Library **RPA.Robocorp.WorkItems** won't get easily affected anymore by any issue
+  within the **RPA.Email.ImapSmtp** library.
+- Keyword ``Email To Document`` raises appropriately when the input value is of an
+  unexpected type.
+- Takes into use the latest ``robocorp-storage`` **1.0.1**, adding various fixes into
+  the **RPA.Robocorp.Storage** library.
+
+27.4.1 - 11 Oct 2023
+--------------------
+
+- Fix keyword ``Email To Document`` in library **RPA.Email.ImapSmtp** by restricting
+  the ``python-docx`` package version to the maximum working one.
+
+  .. warning::
+    This affected both this library and **RPA.Robocorp.WorkItems** due to a slipped
+    sub-dependency breaking change. We strongly suggest to upgrade to the latest
+    ``rpaframework`` in order to benefit from the fix, and if you're not ready for it
+    yet, pin in your `conda.yaml` ``python-docx==0.8.11`` for the time being.
+
+27.4.0 - 11 Oct 2023
+--------------------
+
+- Library **RPA.JavaAccessBridge** (:issue:`1060`; ``java-access-bridge-wrapper``
+  **1.1.0**):
+
+  - New library import parameter `max_depth` which limits the maximum level the search
+    will go when selecting a window and building the element tree. With
+    `disable_refresh` one can disable any implicit global refresh when this is set to
+    `False`.
+  - Add new keyword ``Refresh Element`` for explicitly refreshing elements. (useful
+    when callbacks are disabled and new data appears in the app)
+  - Enhance ``Read Table`` with `visible_only` parameter which controls what kind of
+    children (inner cells of the table) to return. The number of columns is correctly
+    detected and the table automatically refreshes when callbacks are disabled and the
+    global refresh is enabled.
+  - Bugfixes in the following keywords: ``Click Element``,
+    ``Set Display Scale Factor``, ``Get Element Actions``.
+
+27.3.1 - 10 Oct 2023
+--------------------
+
+- Casual dependencies upgrades and alignment.
+
+06 Oct 2023
+-----------
+
+- Security update for ``rpaframework-recognition`` (:pr:`1105` **5.2.2**):
+  Bumps ``opencv-python-headless`` to version **4.8.1.78**.
+
+27.3.0 - 29 Sep 2023
+--------------------
+
+- Library **RPA.PDF** (:pr:`1102`; ``rpaframework-pdf`` **7.3.0**):
+
+  - Keywords ``HTML to PDF`` and ``Template HTML to PDF`` now support
+    parameters `margin` and `working_dir`. Latter can be used to set
+    directory for example image files referenced in the HTML content.
+  - Keyword ``HTML to PDF`` can be given a single HTML string to create
+    single page PDF or list of HTML strings to create multi-page PDF.
+
+27 Sep 2023
+-----------
+
+- Security update for ``rpaframework`` (**27.2.1**) and ``rpaframework-recognition``
+  (**5.2.1**): Bumps ``pillow`` to version **10.0.1**.
+
+27.2.0 - 26 Sep 2023
+--------------------
+
+- Add regular expression support for ``RPA.JavaAccessBridge`` library locators by
+  updating ``java-access-bridge-wrapper`` package to the version **1.0.0**.
+- Update ``selenium`` package to the version **4.13.0**.
 
 27.1.0 - 15 Sep 2023
 --------------------
